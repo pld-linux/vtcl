@@ -63,14 +63,12 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/vtsetup
 install %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}/
 install %{SOURCE3} $RPM_BUILD_ROOT%{_applnkdir}/Development
 
-gzip -9nf ChangeLog README doc/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.gz
+%doc ChangeLog README doc/*
 %attr(755,root,root) %{_bindir}/vtcl
 %attr(755,root,root) %{_bindir}/vtsetup
 %dir %{_libdir}/vtcl
