@@ -1,0 +1,3 @@
+#!/bin/sh
+VTCL_HOME=/usr/lib/vtcl
+/usr/lib/vtcl/vtsetup.tcl
