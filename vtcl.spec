@@ -7,7 +7,7 @@ Version:	1.6.0b2
 Release:	3
 License:	GPL
 Group:		Development/Tools
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/vtcl/%{name}-%{version}.tar.gz
 # Source0-md5:	cf66b0ed8e9144a1ef9e8a2c070489db
 Source1:	vtsetup
 Source2:	%{name}
@@ -35,8 +35,8 @@ Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
 
 %description -l pl
 Visual Tcl jest darmowym, wysokiej jako¶ci ¶rodowiskiem
-programistycznym dla Unix-a, Windows i Macintosh-a. Poniewa¿ jest ono
-napisane w ca³o¶ci w Tcl (nie s± potrzebne ¿adne zewnêtrzne
+programistycznym dla Uniksa, Windows i Macintosha. Poniewa¿ jest ono
+napisane w ca³o¶ci w Tcl-u (nie s± potrzebne ¿adne zewnêtrzne
 biblioteki) i generuje czysty kod Tcl, zmiany w kodzie przy
 przenoszeniu na inn± platformê powinny byæ niepotrzebne, lub
 trywialne. Visual Tcl posiada interfejs typu GUI dla wiêkszo¶ci
@@ -57,13 +57,13 @@ torna o porte desnecessário ou trivial.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},/usr/lib/vtcl} \
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_prefix}/lib/vtcl} \
 	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT/usr/lib/vtcl/
-install vtsetup.tcl $RPM_BUILD_ROOT/usr/lib/vtcl/
+cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT%{_prefix}/lib/vtcl
+install vtsetup.tcl $RPM_BUILD_ROOT%{_prefix}/lib/vtcl
 install %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/vtsetup
-install %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}/
+install %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE3} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}
 
@@ -75,10 +75,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README doc/*
 %attr(755,root,root) %{_bindir}/vtcl
 %attr(755,root,root) %{_bindir}/vtsetup
-%dir /usr/lib/vtcl
-/usr/lib/vtcl/lib
-/usr/lib/vtcl/images
-/usr/lib/vtcl/vtcl.tcl
-%attr(755,root,root) /usr/lib/vtcl/vtsetup.tcl
+%dir %{_prefix}/lib/vtcl
+%{_prefix}/lib/vtcl/lib
+%{_prefix}/lib/vtcl/images
+%{_prefix}/lib/vtcl/vtcl.tcl
+%attr(755,root,root) %{_prefix}/lib/vtcl/vtsetup.tcl
 %{_desktopdir}/vtcl.desktop
 %{_pixmapsdir}/vtcl.png
