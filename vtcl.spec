@@ -4,7 +4,7 @@ Summary(pl):	Niezale¿ne od platformy ¶rodowisko programistyczne
 Summary(pt_BR):	Visual Tcl - ambiente de desenvolvimento de aplicações multi-plataforma
 Name:		vtcl
 Version:	1.6.0b2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
