@@ -5,6 +5,7 @@ Comment[es]=Visual TCL - Ambiente de desarrollo de aplicaciones multi plataforma
 Comment[pl]=Niezależne od platformy środowisko programistyczne
 Comment[pt_BR]=Visual TCL - ambiente de desenvolvimento de aplicações multi-plataforma
 Exec=vtcl
+Icon=vtcl.png
 Terminal=0
 Type=Application
 Categories=Development
