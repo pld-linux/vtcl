@@ -1,7 +1,7 @@
 Summary:	A cross-platform application development environment.
 Summary:	Niezale¿ne od platformy ¶rodowisko programistyczne.
 Name:		vtcl
-Version:	1.5.1b3
+Version:	1.5.2
 Release:	1
 License:	GPL
 Group:		Development/Tools
@@ -10,6 +10,7 @@ Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	http://prdownloads.sourceforge.net/vtcl/%{name}-%{version}.tar.gz
 Source1:	vtsetup
+Source2:	vtcl
 URL:		http://www.neuron.com/stewart/vtcl/
 Patch0:		%{name}-config.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,16 +42,16 @@ przegl±darce internetowej (np. Netscape, lub MSIE).
 
 %prep
 %setup -q
-%patch0 -p1 
 %{__install} %{SOURCE1} .
+%{__install} %{SOURCE2} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__install} -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/vtcl}
 cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT%{_libdir}/vtcl/
-%{__install} -m 755 vtsetup.tcl $RPM_BUILD_ROOT%{_libdir}/vtcl/
+%{__install} vtsetup.tcl $RPM_BUILD_ROOT%{_libdir}/vtcl/
 %{__install} vtcl $RPM_BUILD_ROOT%{_bindir}/
-%{__install}  vtsetup $RPM_BUILD_ROOT%{_bindir}/vtsetup
+%{__install} vtsetup $RPM_BUILD_ROOT%{_bindir}/vtsetup
 
 gzip -9nf LICENSE README doc/*
 
