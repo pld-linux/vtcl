@@ -65,7 +65,7 @@ install %{SOURCE3} $RPM_BUILD_ROOT%{_applnkdir}/Development
 
 gzip -9nf ChangeLog README doc/*
 
-%clean 
+%clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
