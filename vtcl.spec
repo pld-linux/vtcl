@@ -4,7 +4,7 @@ Summary(pl):	Niezale¿ne od platformy ¶rodowisko programistyczne
 Summary(pt_BR):	Visual Tcl - ambiente de desenvolvimento de aplicações multi-plataforma
 Name:		vtcl
 Version:	1.6.0b2
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -57,11 +57,11 @@ torna o porte desnecessário ou trivial.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/vtcl} \
+install -d $RPM_BUILD_ROOT{%{_bindir},/usr/lib/vtcl} \
 	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT%{_libdir}/vtcl/
-install vtsetup.tcl $RPM_BUILD_ROOT%{_libdir}/vtcl/
+cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT/usr/lib/vtcl/
+install vtsetup.tcl $RPM_BUILD_ROOT/usr/lib/vtcl/
 install %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/vtsetup
 install %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}/
 install %{SOURCE3} $RPM_BUILD_ROOT%{_desktopdir}
@@ -75,10 +75,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README doc/*
 %attr(755,root,root) %{_bindir}/vtcl
 %attr(755,root,root) %{_bindir}/vtsetup
-%dir %{_libdir}/vtcl
-%{_libdir}/vtcl/lib
-%{_libdir}/vtcl/images
-%{_libdir}/vtcl/vtcl.tcl
-%attr(755,root,root) %{_libdir}/vtcl/vtsetup.tcl
+%dir /usr/lib/vtcl
+/usr/lib/vtcl/lib
+/usr/lib/vtcl/images
+/usr/lib/vtcl/vtcl.tcl
+%attr(755,root,root) /usr/lib/vtcl/vtsetup.tcl
 %{_desktopdir}/vtcl.desktop
 %{_pixmapsdir}/vtcl.png
