@@ -7,4 +7,5 @@ Comment[pt_BR]=Visual TCL - ambiente de desenvolvimento de aplicações multi-pl
 Exec=vtcl
 Terminal=0
 Type=Application
+Categories=Development
 # vi: encoding=utf-8
