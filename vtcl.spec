@@ -1,7 +1,7 @@
 Summary:	A cross-platform application development environment
-Summary(es):	Visual TCL - Ambiente de desarrollo de aplicaciones multi plataforma
+Summary(es):	Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
 Summary(pl):	Niezale¿ne od platformy ¶rodowisko programistyczne
-Summary(pt_BR):	Visual TCL - ambiente de desenvolvimento de aplicações multi-plataforma
+Summary(pt_BR):	Visual Tcl - ambiente de desenvolvimento de aplicações multi-plataforma
 Name:		vtcl
 Version:	1.6.0b2
 Release:	1
@@ -31,7 +31,7 @@ importation of pre-existing Tcl/Tk code. Visual Tcl can export Tclets,
 which will run in Netscape or MSIE.
 
 %description -l es
-Visual TCL - Ambiente de desarrollo de aplicaciones multi plataforma
+Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
 
 %description -l pl
 Visual Tcl jest darmowym, wysokiej jako¶ci ¶rodowiskiem
