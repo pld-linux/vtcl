@@ -4,7 +4,7 @@ Summary(pl):	Niezale¿ne od platformy ¶rodowisko programistyczne
 Summary(pt_BR):	Visual TCL - ambiente de desenvolvimento de aplicações multi-plataforma
 Name:		vtcl
 Version:	1.6.0a3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Source1:	vtsetup
 Source2:	%{name}
 Source3:	%{name}.desktop
+Source4:	%{name}.png
 Patch0:		%{name}-config.patch
 URL:		http://www.neuron.com/stewart/vtcl/
 Requires:	tk
@@ -56,13 +57,15 @@ torna o porte desnecessário ou trivial.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/vtcl,%{_applnkdir}/Development}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/vtcl} \
+	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT%{_libdir}/vtcl/
 install vtsetup.tcl $RPM_BUILD_ROOT%{_libdir}/vtcl/
 install %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/vtsetup
 install %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}/
-install %{SOURCE3} $RPM_BUILD_ROOT%{_applnkdir}/Development
+install %{SOURCE3} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -77,4 +80,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/vtcl/images
 %{_libdir}/vtcl/vtcl.tcl
 %attr(755,root,root) %{_libdir}/vtcl/vtsetup.tcl
-%{_applnkdir}/Development/*
+%{_desktopdir}/vtcl.desktop
+%{_pixmapsdir}/vtcl.png
