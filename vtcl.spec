@@ -3,11 +3,11 @@ Summary(es):	Visual TCL - Ambiente de desarrollo de aplicaciones multi plataform
 Summary(pl):	Niezale¿ne od platformy ¶rodowisko programistyczne
 Summary(pt_BR):	Visual TCL - ambiente de desenvolvimento de aplicações multi-plataforma
 Name:		vtcl
-Version:	1.5.2
+Version:	1.6.0a3
 Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://prdownloads.sourceforge.net/vtcl/%{name}-%{version}.tar.gz
+Source0:	http://telia.dl.sf.net/vtcl/%{name}-%{version}.tar.gz
 Source1:	vtsetup
 Source2:	%{name}
 Source3:	%{name}.desktop
