@@ -7,7 +7,7 @@ Version:	1.6.0a3
 Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://telia.dl.sf.net/vtcl/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5: daa4be455604f53d6140fbcabd422763
 Source1:	vtsetup
 Source2:	%{name}
