@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Development/Tools
 Source0:	http://telia.dl.sf.net/vtcl/%{name}-%{version}.tar.gz
+# Source0-md5: daa4be455604f53d6140fbcabd422763
 Source1:	vtsetup
 Source2:	%{name}
 Source3:	%{name}.desktop
