@@ -1,0 +1,12 @@
+--- vtcl-1.5.1b3/vtcl.old	Thu Mar  1 11:47:08 2001
++++ vtcl-1.5.1b3/vtcl	Thu Mar  1 11:47:40 2001
+@@ -0,0 +1,9 @@
++#!/bin/sh
++
++PATH_TO_WISH=/usr/bin/wish
++VTCL_HOME=/usr/lib/vtcl
++
++export PATH_TO_WISH
++export VTCL_HOME
++
++exec ${PATH_TO_WISH} ${VTCL_HOME}/vtcl.tcl $*
