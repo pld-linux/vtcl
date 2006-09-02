@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_prefix}/lib/vtcl} \
 	$RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-cp -ar vtcl.tcl images lib $RPM_BUILD_ROOT%{_prefix}/lib/vtcl
+cp -a vtcl.tcl images lib $RPM_BUILD_ROOT%{_prefix}/lib/vtcl
 install vtsetup.tcl $RPM_BUILD_ROOT%{_prefix}/lib/vtcl
 install %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/vtsetup
 install %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}
