@@ -1,7 +1,7 @@
 Summary:	A cross-platform application development environment
-Summary(es.UTF-8):   Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
-Summary(pl.UTF-8):   Niezależne od platformy środowisko programistyczne
-Summary(pt_BR.UTF-8):   Visual Tcl - ambiente de desenvolvimento de aplicações multi-plataforma
+Summary(es.UTF-8):	Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
+Summary(pl.UTF-8):	Niezależne od platformy środowisko programistyczne
+Summary(pt_BR.UTF-8):	Visual Tcl - ambiente de desenvolvimento de aplicações multi-plataforma
 Name:		vtcl
 Version:	1.6.0b2
 Release:	3
