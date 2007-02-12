@@ -1,7 +1,7 @@
 Summary:	A cross-platform application development environment
-Summary(es):	Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
-Summary(pl):	Niezale¿ne od platformy ¶rodowisko programistyczne
-Summary(pt_BR):	Visual Tcl - ambiente de desenvolvimento de aplicações multi-plataforma
+Summary(es.UTF-8):   Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
+Summary(pl.UTF-8):   NiezaleÅ¼ne od platformy Å›rodowisko programistyczne
+Summary(pt_BR.UTF-8):   Visual Tcl - ambiente de desenvolvimento de aplicaÃ§Ãµes multi-plataforma
 Name:		vtcl
 Version:	1.6.0b2
 Release:	3
@@ -30,27 +30,27 @@ for most aspects of Tcl/Tk development, and support for the
 importation of pre-existing Tcl/Tk code. Visual Tcl can export Tclets,
 which will run in Netscape or MSIE.
 
-%description -l es
+%description -l es.UTF-8
 Visual Tcl - Ambiente de desarrollo de aplicaciones multi plataforma
 
-%description -l pl
-Visual Tcl jest darmowym, wysokiej jako¶ci ¶rodowiskiem
-programistycznym dla Uniksa, Windows i Macintosha. Poniewa¿ jest ono
-napisane w ca³o¶ci w Tcl-u (nie s± potrzebne ¿adne zewnêtrzne
+%description -l pl.UTF-8
+Visual Tcl jest darmowym, wysokiej jakoÅ›ci Å›rodowiskiem
+programistycznym dla Uniksa, Windows i Macintosha. PoniewaÅ¼ jest ono
+napisane w caÅ‚oÅ›ci w Tcl-u (nie sÄ… potrzebne Å¼adne zewnÄ™trzne
 biblioteki) i generuje czysty kod Tcl, zmiany w kodzie przy
-przenoszeniu na inn± platformê powinny byæ niepotrzebne, lub
-trywialne. Visual Tcl posiada interfejs typu GUI dla wiêkszo¶ci
-zagadnieñ programowania w Tcl/Tk, daje mo¿liwo¶æ tworzenia z³o¿onych
-widgetów oraz bibliotek widgetów, umo¿liwia tak¿e importowanie
-istniej±cego kodu Tcl/Tk. Visual Tcl mo¿e eksportowaæ tzw. Tclet-y,
-które mo¿na uruchomiæ w przegl±darce internetowej (np. Netscape, lub
+przenoszeniu na innÄ… platformÄ™ powinny byÄ‡ niepotrzebne, lub
+trywialne. Visual Tcl posiada interfejs typu GUI dla wiÄ™kszoÅ›ci
+zagadnieÅ„ programowania w Tcl/Tk, daje moÅ¼liwoÅ›Ä‡ tworzenia zÅ‚oÅ¼onych
+widgetÃ³w oraz bibliotek widgetÃ³w, umoÅ¼liwia takÅ¼e importowanie
+istniejÄ…cego kodu Tcl/Tk. Visual Tcl moÅ¼e eksportowaÄ‡ tzw. Tclet-y,
+ktÃ³re moÅ¼na uruchomiÄ‡ w przeglÄ…darce internetowej (np. Netscape, lub
 MSIE).
 
-%description -l pt_BR
-O Visual Tcl é um ambiente de desenvolvimento de aplicações para as
+%description -l pt_BR.UTF-8
+O Visual Tcl Ã© um ambiente de desenvolvimento de aplicaÃ§Ãµes para as
 plataformas UNIX, Windows e Macintosh, de alta qualidade e livremente
-distribuível. Escrito inteiramente em Tcl e gerando código Tcl puro,
-torna o porte desnecessário ou trivial.
+distribuÃ­vel. Escrito inteiramente em Tcl e gerando cÃ³digo Tcl puro,
+torna o porte desnecessÃ¡rio ou trivial.
 
 %prep
 %setup -q
